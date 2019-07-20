@@ -5,13 +5,6 @@ import (
 	"time"
 )
 
-func Test_calculate_Input_9_5_7_4_Should_Be_40(t *testing.T) {
-	expected, number1, number2, number3, number4 := 40, 9, 5, 7, 4
-	actual := calculate(expected, number1, number2, number3, number4)
-	if actual != expected {
-		t.Errorf("expecred %d but it got %d", expected, actual)
-	}
-}
 
 func Test_calculateSecond_Input_Start_5_2_1996_End_20_7_2019_Should_Be_740188800(t *testing.T){
 	expected := 740188800
