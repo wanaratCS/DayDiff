@@ -1,9 +1,15 @@
 package calcualte
 
-import "time"
+import (
+	"time"
+)
 
-func calculateSecond(StartDate ,EndDate time.Time) int  {
-	return 740188800
+func calculateSecond(StartDate ,EndDate time.Time) int {
+
+	EndDate = EndDate.AddDate(0,0,1)
+	seconds := EndDate.Sub(StartDate).Seconds()
+
+	return int(seconds)
 }
 
 func calculateMinutes(StartDate,EndDate time.Time) int  {
